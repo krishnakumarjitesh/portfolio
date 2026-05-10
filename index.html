@@ -1,116 +1,372 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Info</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-          <img src="k.jpg" alt="Krishna Kumar" class="profile-img">
-          <div class="about-text">
-              <h3>Hii, I'm Krishna Kumar, A passionate Full-Stack Web Developer specializing in the MERN stack and JavaScript. I love bringing ideas to life through code, creating responsive and interactive web applications that solve real-world problems.</h3>
-             <h3>Along with web development, I’m also diving deep into Java and Data Structures & Algorithms (DSA) to strengthen my problem-solving skills. I enjoy tackling coding challenges and optimizing algorithms to write efficient code.</h3>
-             <h3>Whenever I’m not coding, I enjoy exploring new technologies, experimenting with side projects, and staying updated with industry trends. Let’s build something amazing together!</h3>
 
-          </div>
-      </div>
-  </section>
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <h3>Master of Computer Application</h3>
-            <p>Galgotias University, 2024-26</p>
-          </li>
-          <li>
-                <h3>Bachelor of Computer Application</h3>
-                <p>Bihar University, 2021-24</p>
-          </li>
-          <li>
-                <h3>Java Full-Stack with DSA</h3>
-                <p>PW(Physics Wallah), 2024</p>
-          </li>
-            <li>
-                <h3>MERN Stack Development</h3>
-                <p>ApnaCollege, 2025</p>
-            </li>
-        </ul>
-    </section>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Krishna Kumar</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-container">
-          <div class="project-card">
-              <h3>ExpenseTracker App</h3>
-              <p>A web app built with React, Html, CSS and JS personal expenses.</p>
-              <a href="https://github.com/krishnakumarjitesh/expense-tracker" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-              <h3>WeatherApp</h3>
-              <p>A WeatherApp built using Html, CSS and js.</p>
-              <a href="https://github.com/krishnakumarjitesh/weatherApp" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-              <h3>SimpleCalculator</h3>
-              <p>A SimpleCalculator built using Html, CSS and js.</p>
-              <a href="https://github.com/krishnakumarjitesh/SimpleCalculator" target="_blank">View Project</a>
-          </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-tag">✦ Open to Opportunities</span>
+    <h1 class="hero-name">
+      Krishna<br><em>Kumar</em>
+    </h1>
+    <p class="hero-sub">
+      Full-Stack Web Developer specializing in the MERN stack & JavaScript. I love bringing ideas to life through code - building responsive, interactive web apps that solve real-world problems.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+         <img src="krishna.jpeg" alt="Krishna Kumar" />
       </div>
-  </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li><i class="fas fa-coffee"></i> Java & DSA</li>
-          <li><i class="fas fa-robot"></i> Python with AI & ML</li>
-          <li><i class="fab fa-cuttlefish"></i>C & C++</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-node"></i> Node.js & Express.js</li>
-            <li><i class="fas fa-database"></i> MongoDB & MYSQL</li>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fab fa-github"></i> Git & Github</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-js-square"></i> JavaScript</li>
-        </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact Info</h2>
+      <div class="float-badge">
+        <span class="dot" style="background:#3D6B5E;"></span>MERN Stack Dev
+      </div>
+      <div class="float-badge">
+        <span class="dot" style="background:#C8522A;"></span>Intern @ Codec Tech
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-item">
+    <div class="stat-num">5<span>+</span></div>
+    <div class="stat-label">Projects Built</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5<span>+</span></div>
+    <div class="stat-label">Certifications</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">15<span>+</span></div>
+    <div class="stat-label">Skills & Tools</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">8.26</div>
+    <div class="stat-label">MCA CGPA</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">A little about me</h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
       <p>
-          <a href="mailto:krishnakumar150202@gmail.com" target="_blank">
-              <i class="fas fa-envelope">Email</i>
-          </a>
-          <a href="https://wa.me/+918581993722" target="_blank">
-            <i class="fab fa-whatsapp">WhatsApp</i>
-        </a>
-          <a href="https://www.linkedin.com/in/krishna-kumar-jitesh" target="_blank">
-              <i class="fab fa-linkedin">LinkedIn</i>
-          </a>
-          <a href="https://github.com/krishnakumarjitesh" target="_blank">
-              <i class="fab fa-github">Github</i>
-          </a>
-          <a href="https://twitter.com/jitesh_kr_sahu" target="_blank">
-            <i class="fab fa-twitter"></i> Twitter
-        </a>        
-          <a href="https://www.instagram.com/jitesh_kr_sahu" target="_blank">
-              <i class="fab fa-instagram">Instagram</i>
-          </a>
-          <a href="https://www.facebook.com/krishnakumar.jitesh" target="_blank">
-              <i class="fab fa-facebook">Facebook</i>
-          </a>
+        Hi! I'm <strong>Krishna Kumar</strong>, a passionate Full-Stack Web Developer specializing in the MERN stack and JavaScript. I love bringing ideas to life through code, creating responsive and interactive web applications that solve real-world problems.
       </p>
-  </section>  
+      <p>
+        Along with web development, I'm diving deep into Java and Data Structures & Algorithms (DSA) to strengthen my problem-solving skills. I enjoy tackling coding challenges and optimizing algorithms to write efficient code.
+      </p>
+      <p>
+        Whenever I'm not coding, I explore new technologies, experiment with side projects, and stay updated with industry trends. Let's build something amazing together!
+      </p>
+      <div class="skills-list">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Express.js</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">HTML / CSS</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">DSA</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">Vercel</span>
+      </div>
+    </div>
+    <div class="experience-list">
+      <div class="exp-card">
+        <div class="exp-role">Master of Computer Application</div>
+        <div class="exp-company">Galgotias University</div>
+        <div class="exp-period">2024 - 2026</div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-role">Bachelor of Computer Application</div>
+        <div class="exp-company">M.S College Motihari Bihar University</div>
+        <div class="exp-period">2021 - 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-eyebrow">Work</div>
+  <h2 class="section-title">My experience</h2>
+  <div class="reveal">
+    <div class="exp-section-card">
+      <div class="exp-section-header">
+        <div>
+          <div class="exp-section-role">MERN Stack Developer Intern</div>
+          <div class="exp-section-company">Codec Technologies</div>
+        </div>
+        <span class="exp-section-period">June 2025 - Sep 2025</span>
+      </div>
+      <ul class="exp-section-bullets">
+        <li>Built dynamic full-stack web applications using React.js (frontend) and Node.js (backend), ensuring responsive UI and smooth performance.</li>
+        <li>Designed and integrated RESTful APIs with authentication and CRUD operations using the MERN stack for secure and efficient data flow.</li>
+        <li>Collaborated with the development team to enhance user experience, optimize performance, and improve scalability.</li>
+        <li>Optimized application performance by reducing load time and improving responsiveness through efficient code practices.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title"> Projects</h2>
+  <div class="projects-grid reveal">
+    <div class="project-card">
+      <div class="project-thumb project-thumb-1">🤖</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="project-tag">MERN</span><span class="project-tag">Gemini API</span><span class="project-tag">Vercel</span></div>
+        <div class="project-title">Apnai - AI Chatbot Platform</div>
+        <p class="project-desc">Full-stack AI chatbot with Google Gemini API, real-time streaming, MongoDB chat history, and multiple AI modes like Study Helper & Code Reviewer.</p>
+        <a href="https://github.com/krishnakumarjitesh" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb project-thumb-2">🎥</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="project-tag">MERN</span><span class="project-tag">WebRTC</span><span class="project-tag">Socket.IO</span></div>
+        <div class="project-title">VideoBaat - Video Conferencing</div>
+        <p class="project-desc">Real-time video conferencing app with audio/video streaming, screen sharing, in-meeting chat, and secure user authentication.</p>
+        <a href="https://github.com/krishnakumarjitesh" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-thumb project-thumb-3">💸</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">JavaScript</span></div>
+        <div class="project-title">Expense Tracker App</div>
+        <p class="project-desc">A web app built with React, HTML, CSS and JS to track and manage personal expenses with a clean, intuitive UI.</p>
+        <a href="https://github.com/krishnakumarjitesh/expense-tracker" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb project-thumb-1" style="background: linear-gradient(135deg, #3D6B5E22 0%, #3D6B5E44 100%);">🌤️</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JS</span></div>
+        <div class="project-title">Weather App</div>
+        <p class="project-desc">A live weather app using a public API, displaying real-time temperature, conditions, and forecasts for any city.</p>
+        <a href="https://github.com/krishnakumarjitesh/weatherApp" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb project-thumb-2" style="background: linear-gradient(135deg, #1A161222 0%, #1A161244 100%);">🧮</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="project-tag">HTML</span><span class="project-tag">CSS</span><span class="project-tag">JS</span></div>
+        <div class="project-title">Simple Calculator</div>
+        <p class="project-desc">A clean, functional calculator built with vanilla HTML, CSS and JavaScript supporting all basic arithmetic operations.</p>
+        <a href="https://github.com/krishnakumarjitesh/SimpleCalculator" target="_blank" class="project-link">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES / SKILLS -->
+<section id="services">
+  <h2 class="section-title">Technical skills</h2>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-icon">⚛️</div>
+      <div class="service-title">Frontend Development</div>
+      <p class="service-desc">Building fast, responsive UIs with React.js, HTML, CSS, Bootstrap and Tailwind CSS. Strong eye for clean component architecture.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🟢</div>
+      <div class="service-title">Backend & APIs</div>
+      <p class="service-desc">Developing robust RESTful APIs with Node.js and Express.js, including authentication and CRUD operations.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🗄️</div>
+      <div class="service-title">Database Design</div>
+      <p class="service-desc">Designing and optimizing databases using MongoDB and MySQL for efficient, scalable data management.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">☕</div>
+      <div class="service-title">Java & DSA</div>
+      <p class="service-desc">Strong foundation in OOPs, Data Structures & Algorithms with Java. Enjoy solving complex problems with optimized solutions.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <div class="service-title">Full-Stack MERN Apps</div>
+      <p class="service-desc">End-to-end MERN stack development — from UI design to backend logic, database integration and Vercel deployment.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛠️</div>
+      <div class="service-title">Dev Tools & Platforms</div>
+      <p class="service-desc">Proficient with Git, GitHub, Postman for API testing, and Vercel for seamless CI/CD deployments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-eyebrow">Achievements</div>
+  <h2 class="section-title">My certifications</h2>
+  <div class="cert-grid reveal">
+    <div class="cert-card">
+      <div class="cert-icon">☁️</div>
+      <div class="cert-title">AWS Cloud Foundations & Cloud Architecting</div>
+      <div class="cert-issuer">AWS Academy</div>
+      <div class="cert-date">Sep 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-title">Programming in Java & Cloud Computing</div>
+      <div class="cert-issuer">IIT Kharagpur</div>
+      <div class="cert-date">May 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">☕</div>
+      <div class="cert-title">Java with DSA and System Design 2.0</div>
+      <div class="cert-issuer">Physics Wallah</div>
+      <div class="cert-date">Dec 2024</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🌐</div>
+      <div class="cert-title">Introduction to Networks</div>
+      <div class="cert-issuer">Cisco Networking Academy</div>
+      <div class="cert-date">May 2025</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">⚛️</div>
+      <div class="cert-title">MERN Stack Development (Sigma 4.0)</div>
+      <div class="cert-issuer">Apna College</div>
+      <div class="cert-date">Dec 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-eyebrow">Social Media Talk</div>
+  <div class="contact-wrapper reveal">
+    <div class="contact-info">
+      <p>I'm always open to new opportunities, collaborations, or simply a good conversation. Whether you have a project in mind or just want to connect - feel free to reach out. I typically respond within 24 hours.</p>
+
+      <div class="contact-links">
+        <a href="mailto:krishnakumar150202@gmail.com" class="contact-link">
+          <span class="contact-link-icon"></span>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/krishna-kumar-jitesh" target="_blank" class="contact-link">
+          <span class="contact-link-icon"></span>
+          Linkedin
+        </a>
+        <a href="https://github.com/krishnakumarjitesh" target="_blank" class="contact-link">
+          <span class="contact-link-icon"></span>
+          Github
+        </a>
+        <a href="https://wa.me/+918581993722" target="_blank" class="contact-link">
+          <span class="contact-link-icon"></span>
+          WhatsApp
+        </a>
+        <a href="https://twitter.com/jitesh_kr_sahu" target="_blank" class="contact-link">
+          <span class="contact-link-icon"></span>
+          Twitter(X)
+        </a>
+        <a href="https://www.instagram.com/jitesh_kr_sahu" target="_blank" class="contact-link">
+          <span class="contact-link-icon"></span>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/krishnakumar.jitesh" target="_blank" class="contact-link">
+          <span class="fab fa-facebook"></span>
+          facebook
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="Enter First Name" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" placeholder="Enter Last name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="jk@gmail.com" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="What's on your mind?" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="submit-btn">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Krishna Kumar</div>
+  <div class="footer-copy">© 2026 Krishna Kumar Jitesh. All rights reserved.</div>
+  <div class="footer-links">
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => obs.observe(el));
+
+  // Stagger project cards
+  document.querySelectorAll('.project-card, .service-card, .cert-card').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.08) + 's';
+    el.classList.add('reveal');
+    obs.observe(el);
+  });
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    btn.textContent = 'Message Sent! ✓';
+    btn.style.background = '#3D6B5E';
+    setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3000);
+  }
+</script>
 </body>
 </html>
