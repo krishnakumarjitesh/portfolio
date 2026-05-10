@@ -19,7 +19,6 @@
     overflow-x: hidden;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; justify-content: space-between; align-items: center;
@@ -41,7 +40,6 @@
   }
   .nav-links a:hover { color: var(--dark); }
 
-  /* ── HERO ── */
   .hero {
     min-height: 100vh;
     display: grid;
@@ -108,7 +106,6 @@
   }
   .btn-secondary:hover { border-color: var(--dark); transform: translateY(-2px); }
 
-  /* Hero visual */
   .hero-visual {
     display: flex; justify-content: center; align-items: center;
     opacity: 0; animation: fadeIn 1s 0.5s forwards;
@@ -123,7 +120,7 @@
   .avatar-inner {
   width: 280px; height: 280px;
   border-radius: 50%;
-  overflow: hidden;        /* ← add this */
+  overflow: hidden;    
   background: linear-gradient(135deg, #C8522A 0%, #3D6B5E 100%);
   display: flex; align-items: center; justify-content: center;
   font-family: 'Playfair Display', serif;
@@ -156,7 +153,6 @@
     border-radius: 50%; margin-right: 6px; vertical-align: middle;
   }
 
-  /* ── STATS ── */
   .stats {
     background: var(--dark);
     padding: 3rem 4rem;
@@ -174,7 +170,6 @@
   .stat-num span { color: var(--accent); }
   .stat-label { font-size: 0.82rem; color: rgba(245,240,232,0.5); margin-top: 0.4rem; letter-spacing: 0.05em; }
 
-  /* ── SECTIONS ── */
   section { padding: 6rem 4rem; }
   .section-eyebrow {
     font-size: 0.75rem; font-weight: 500;
@@ -190,7 +185,6 @@
   }
   .section-title em { font-style: italic; }
 
-  /* ── ABOUT ── */
   #about { background: var(--card-bg); }
   .about-grid {
     display: grid;
@@ -227,7 +221,6 @@
   .exp-company { color: var(--accent); font-size: 0.9rem; margin: 0.2rem 0; }
   .exp-period { font-size: 0.78rem; color: var(--muted); }
 
-  /* ── PROJECTS ── */
   #projects { background: var(--cream); }
   .projects-grid {
     display: grid;
@@ -292,7 +285,6 @@
   .service-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
   .service-desc { font-size: 0.88rem; line-height: 1.7; color: var(--muted); }
 
-  /* ── CONTACT ── */
   #contact { background: var(--cream); }
   .contact-wrapper {
     display: grid; grid-template-columns: 1fr 1fr;
@@ -337,7 +329,6 @@
   }
   .form-submit:hover { background: var(--dark); transform: translateY(-2px); }
 
-  /* ── FOOTER ── */
   footer {
     background: var(--dark);
     padding: 2rem 4rem;
@@ -350,7 +341,6 @@
   .footer-links a { font-size: 0.82rem; color: rgba(245,240,232,0.5); text-decoration: none; transition: color 0.2s; }
   .footer-links a:hover { color: var(--cream); }
 
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
@@ -361,7 +351,6 @@
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── EXPERIENCE ── */
   #experience { background: var(--cream); }
   .exp-section-card {
     background: var(--card-bg);
@@ -385,7 +374,6 @@
   .exp-section-bullets li { font-size: 0.9rem; line-height: 1.7; color: var(--muted); padding-left: 1.2rem; position: relative; }
   .exp-section-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent2); font-size: 0.8rem; top: 0.1rem; }
 
-  /* ── CERTIFICATIONS ── */
   #certifications { background: var(--cream); }
   .cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .cert-card {
